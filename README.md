@@ -1,24 +1,54 @@
-# ModuLatex Resume
+\documentclass[11pt]{article}
 
-## What is it?
+\usepackage{../components/commonheader}
 
-The **ModuLatex resume** is a component-based Latex template optimized for people who need multiple versions of resumes.
+\begin{document}
 
-Check out [an example](https://github.com/petezh/ModuLatex-Resume/blob/master/resume-general/Peter_Zhang_Resume.pdf). 👈
+\subimport{../components/}{background.tex}
 
-Some advantages over your run-of-the-mill template include:
+\resumesection{\emoji{books} Education}
 
-- Easily make multiple versions of your resume by important different components.
-- A sleek design with pretty emojis. 😌
-- Adjustable, compact structure lets you pack as much content as your heart desires.
-- Sections are customizable to your needs. Add your own custom "volunteering" or "interests" section.
-- Links to your social medias and external sites.
-- ATS-friendly formatting will save you time from manually fixing errors.
+\subimport{../components/education}{Memorial.tex}
 
-## How do I use it?
+%\subimport{../components/education}{AIUB.tex}%
 
-Be sure to use **LuaLaTeX** if you plan on using the emojis. Otherwise, you can take them out and use any Latex typesetting system. To set it up for yourself, add your background, skills, experiences, projects, education, and awards to separate `.tex` files in the `components` folder. Make a folder for your resume in the root directory and compile! If you move around the main file, be sure to update the file paths.
+\resumesection{\emoji{briefcase} Experience}
 
-## Have a question?
 
-Feel free to reach out to me on [Facebook]([https://www.facebook.com/petejzh/](https://www.facebook.com/tanzid.rahman.144/)) or at [tanjet1004@gmail.com](mailto:tanjet1004@gmail.com) for questions!
+%\subimport{../components/experiences/}{SJCC.tex}%
+
+
+\subimport{../components/experiences/}{Beyond van gogh.tex}
+
+\subimport{../components/experiences/}{TeachAssistant.tex}
+\subimport{../components/experiences/}{TeacherAssistant.tex}
+
+\resumesection{\emoji{construction} Projects}
+
+\subimport{../components/projects/}{PerReview.tex}
+\subimport{../components/projects/}{VirtualHospital.tex}
+\subimport{../components/projects/}{Pastry.tex}
+\subimport{../components/projects/}{MovieStreaming.tex}
+
+
+
+\resumesection{\emoji{hand-with-fingers-splayed} Skills}
+
+\subimport{../components/}{skills.tex}
+\resumesection{\emoji{trophy} Certifications}
+
+\subimport{../components/}{certifications.tex}
+
+\resumesection{\emoji{phone} References}
+
+\subimport{../components/}{References.tex}
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -21,4 +21,4 @@ Be sure to use **LuaLaTeX** if you plan on using the emojis. Otherwise, you can 
 
 ## Have a question?
 
-Feel free to reach out to me on [Facebook](https://www.facebook.com/petejzh/) or at [petez@berkeley.edu](mailto:petez@berkeley.edu) for questions!
+Feel free to reach out to me on [Facebook]([https://www.facebook.com/petejzh/](https://www.facebook.com/tanzid.rahman.144/)) or at [tanjet1004@gmail.com](mailto:tanjet1004@gmail.com) for questions!
